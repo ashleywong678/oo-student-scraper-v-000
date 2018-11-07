@@ -6,8 +6,8 @@ class Scraper
 
   def scrape_home_page
     home_url = https://broadway.com/shows/tickets/
-    html = Nokogiri::HTML(open(home_url))
     binding.pry
+    html = Nokogiri::HTML(open(home_url))
     shows_hash = []
     html.css('div.card card--hover card--shadow bg-white mtn').each {|show| puts show}
     end
