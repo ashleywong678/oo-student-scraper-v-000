@@ -4,7 +4,7 @@ require 'pry'
 
 class Scraper
 
-  def self.scrape_index_page(index_url)
+  def self.scrape_index_page#(index_url)
     html = Nokogiri::HTML(open(https://broadway.com/shows/tickets/))
     binding.pry
     student_hash = []
