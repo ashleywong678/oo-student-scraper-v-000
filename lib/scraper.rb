@@ -8,8 +8,8 @@ class Scraper
     home_url = https://broadway.com/shows/tickets/
     html = Nokogiri::HTML(open(home_url))
     binding.pry
-        shows_hash = []
-        html.css('div.card card--hover card--shadow bg-white mtn').each {|show| puts show}
+    shows_hash = []
+    html.css('div.card card--hover card--shadow bg-white mtn').each {|show| puts show}
     end
 
   def self.scrape_profile_page(profile_url)
